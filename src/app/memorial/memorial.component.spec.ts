@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MemorialComponent } from './memorial.component';
+import { MemorialComponent } from './MemorialComponent';
 
 describe('MemorialComponent', () => {
   let component: MemorialComponent;
