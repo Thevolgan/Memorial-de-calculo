@@ -1,23 +1,2 @@
 
-<p-table>
-    <ng-template pTemplate="caption"> Header </ng-template>
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Code</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Quantity</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-product>
-        <tr>
-            <td>code</td>
-            <td>name</td>
-            <td>categorie</td>
-            <td>quanti</td>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="summary"> Footer </ng-template>
-</p-table>
-
-<button (click)="generatePDF()">Baixar PDF</button>
+<button (click)="generatePDF()" style="position: relative; display: flex; justify-content: center; align-items: center; justify-items: center; align-content:center; width: 500px; height: 300px">Baixar PDF</button>
