@@ -246,7 +246,7 @@ export class MemorialComponent implements OnInit {
     autoTable(doc, {
       body: [
         [
-          {content: '01. (ID 53502) SERVIÇOS DE ENGENHARIA ELÉTRICA, Descrição: Contratação de empresa para elaboração de projetos de revisão de rede elétrica, conforme projeto básico', styles: {fontSize: 5.5, fontStyle: 'bold', lineColor: false, valign: 'middle', halign: 'left', textColor: [255,255,255], fillColor: '#595959', lineWidth:{right: 1, top: 1, left: 1, bottom:1}, cellPadding: 5}}, 
+          {content: '02. (ID 54876) SERVIÇOS DE MANUTENÇÃO EM SUBESTAÇÃO, Descrição: Contratação de empresa para prestação de serviço de manutenção preventiva em Subestação, com reposição de peças, conforme projeto básico', styles: {fontSize: 5.5, fontStyle: 'bold', lineColor: false, valign: 'middle', halign: 'left', textColor: [255,255,255], fillColor: '#595959', lineWidth:{right: 1, top: 1, left: 1, bottom:1}, cellPadding: 5}}, 
         ]
       ],
       startY: 443,
@@ -257,10 +257,10 @@ export class MemorialComponent implements OnInit {
     autoTable(doc, {
       head: [
         [ 
-          {content: '02.01 -', styles: {fontSize: 4.5, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:1, bottom:0},cellWidth: 48, cellPadding:5}}, 
-          {content: 'SERVIÇOS ORDINÁRIOS NA CAPITAL: Manutenção preventiva - subestações aéreas e abrigadas', styles: {fontSize: 4.5, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
+          {content: '02.01 -', styles: {fontSize: 4.0, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:1, bottom:0},cellWidth: 48, cellPadding:5}}, 
+          {content: 'SERVIÇOS ORDINÁRIOS NA CAPITAL: Manutenção preventiva - subestações aéreas e abrigadas', styles: {fontSize: 4.0, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
           {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
-          {content: 'OK', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: 'OK', styles: {fontSize: 4.0, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
           {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
           {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
           {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
@@ -275,6 +275,16 @@ export class MemorialComponent implements OnInit {
           {content: 'Valor', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 105, cellPadding:5}}, 
           {content: '', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 60, cellPadding:5}}, 
           {content: 'Total(R$)', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 1, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+        ],
+        [ 
+          {content: '03.04.01 -', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 0, top: 0, left:1, bottom:0},cellWidth: 48, cellPadding:5}}, 
+          {content: 'Manutenção Corretiva - Subestação Aérea', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#D6DCE4', lineColor: false, lineWidth:{right: 1, top: 0, left:0, bottom:0}, cellPadding:5}}, 
         ],
       ],
       body: [
@@ -362,7 +372,7 @@ export class MemorialComponent implements OnInit {
 
         ]
       ],
-      startY: 462,
+      startY: 467,
       theme: 'grid',
     })
 
