@@ -27,10 +27,10 @@ export class MemorialComponent implements OnInit {
 
     //LOGO img
     // (dist horizontal LEFT, dist vertical TOP, width, height)
-    doc.addImage("assets/logo3.png", "PNG", 65, 9, 55,55);  
+    //doc.addImage("assets/logo3.png", "PNG", 65, 9, 55,55);  
 
     //TITULO img
-    doc.addImage("assets/logo5.png", "PNG", 250, 10, 300, 55);
+    doc.addImage("assets/logo_top.png", "PNG", 240, 30, 320, 45);
     //CONTEÚDO 1ª TABELA:
     //NOME FANTASIA
     doc.addFileToVFS("Nunito.ttf", Nunito);
@@ -182,6 +182,9 @@ export class MemorialComponent implements OnInit {
       body: [
         [ 
           {content: 'RESPONSAVEL TÉCNICO Eng. Eletricista Elson Carvalho Bezerra CREA: 040551677-0', styles: {fontSize: 5.5, fontStyle: 'bold', lineColor: false, valign: 'middle', halign: 'center', textColor: [0,0,0], fillColor: '#D0CECE', lineWidth:{right: 1, top: 1, left: 1, bottom:1}, cellPadding: 5}}, 
+        ],
+        [
+          {content: '01. (ID 53502) SERVIÇOS DE ENGENHARIA ELÉTRICA, Descrição: Contratação de empresa para elaboração de projetos de revisão de rede elétrica, conforme projeto básico', styles: {fontSize: 5.5, fontStyle: 'bold', lineColor: false, valign: 'middle', halign: 'left', textColor: [255,255,255], fillColor: '#595959', lineWidth:{right: 1, top: 1, left: 1, bottom:1}, cellPadding: 5}}, 
         ]
       ],
       startY: 302,
@@ -192,17 +195,27 @@ export class MemorialComponent implements OnInit {
     autoTable(doc, {
       head: [
         [ 
-          {content: '01.01 -', styles: {fontSize: 4.5, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:1, bottom:0},cellWidth: 48, cellPadding:5}}, 
-          {content: 'SERVIÇOS TÉCNICOS ESPECIALIZADOS: Estudos e projetos de energia de alta tensão', styles: {fontSize: 4.5, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
-          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
-          {content: 'OK', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
-          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
-          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
-          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
-          {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 1, top: 1, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '01.01 -', styles: {fontSize: 4.0, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:1, bottom:0},cellWidth: 48, cellPadding:5}}, 
+          {content: 'SERVIÇOS TÉCNICOS ESPECIALIZADOS: Estudos e projetos de energia de alta tensão', styles: {fontSize: 4.0, fontStyle: 'bold', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.0, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
+          {content: 'OK', styles: {fontSize: 4.0, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.0, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.0, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.0, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 1, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 4.0, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 1, top: 1, left:0, bottom:0}, cellPadding:5}}, 
         ]
       ],
       body: [
+        [
+          {content: 'Referência', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:1, bottom:0},cellWidth: 30, cellPadding:5}}, 
+          {content: 'Descrição do Serviço', styles: {fontSize: 5, fontStyle: 'italic', textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
+          {content: 'Und', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: 'Quant', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 5, fontStyle: 'italic', textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 50, cellPadding:5}}, 
+          {content: 'Valor', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 105, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 60, cellPadding:5}}, 
+          {content: 'Total(R$)', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 1, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+        ],
         [ 
           {content: '01.01.00.001', styles: {fontSize: 5, fontStyle: 'italic', textColor: [0,0,0], lineColor: false, lineWidth:{right: 0, top: 0, left:1, bottom:0},cellWidth: 30, cellPadding:5}}, 
           {content: 'ESTUDO PRELIMINAR DE VIABLIDADE DE MANUTENÇÃO PREVENTIVA/CORRETIVA EM UNIDADE DE SUBESTAÇÃO AÉREA OU ABRIGADA.', styles: {fontSize: 5, fontStyle: 'normal', textColor: [0,0,0], lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
@@ -224,12 +237,22 @@ export class MemorialComponent implements OnInit {
           {content: '', styles: {fontSize: 5, fontStyle: 'normal', textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 105, cellPadding:5}}, 
           {content: 'R$ 10.227,64', styles: {fontSize: 6.5, fontStyle: 'bold', textColor: [255,255,255], fillColor: '#808080', lineColor: false, valign: 'middle', lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 75, cellPadding:5}}, 
           {content: 'dez mil, duzentos e vinte e setereais e sessenta e quatro centavos', styles: {fontSize: 6.5, fontStyle: 'bold', textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 1, top: 0, left:0, bottom:0}, cellPadding:5}}, 
-        ]
+        ],
       ],
-      startY: 319,
+      startY: 337,
       theme: 'grid',
     })
 
+    autoTable(doc, {
+      body: [
+        [
+          {content: '01. (ID 53502) SERVIÇOS DE ENGENHARIA ELÉTRICA, Descrição: Contratação de empresa para elaboração de projetos de revisão de rede elétrica, conforme projeto básico', styles: {fontSize: 5.5, fontStyle: 'bold', lineColor: false, valign: 'middle', halign: 'left', textColor: [255,255,255], fillColor: '#595959', lineWidth:{right: 1, top: 1, left: 1, bottom:1}, cellPadding: 5}}, 
+        ]
+      ],
+      startY: 443,
+      theme: 'grid',
+    })
+    
     // TAB GRUPO 2
     autoTable(doc, {
       head: [
@@ -242,7 +265,17 @@ export class MemorialComponent implements OnInit {
           {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
           {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
           {content: '', styles: {fontSize: 4.5, fontStyle: 'normal', textColor: [0,0,0], fillColor: '#FFFFFF', lineColor: false, lineWidth:{right: 1, top: 0, left:0, bottom:0}, cellPadding:5}}, 
-        ]
+        ],
+        [
+          {content: 'Referência', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:1, bottom:0},cellWidth: 30, cellPadding:5}}, 
+          {content: 'Descrição do Serviço', styles: {fontSize: 5, fontStyle: 'italic', textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0},cellWidth: 240, cellPadding:5}}, 
+          {content: 'Und', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: 'Quant', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 5, fontStyle: 'italic', textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 50, cellPadding:5}}, 
+          {content: 'Valor', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 105, cellPadding:5}}, 
+          {content: '', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 0, top: 0, left:0, bottom:0}, cellWidth: 60, cellPadding:5}}, 
+          {content: 'Total(R$)', styles: {fontSize: 5, fontStyle: 'italic',  textColor: [255,255,255], fillColor: '#808080', lineColor: false, lineWidth:{right: 1, top: 0, left:0, bottom:0}, cellPadding:5}}, 
+        ],
       ],
       body: [
         [ 
@@ -329,7 +362,7 @@ export class MemorialComponent implements OnInit {
 
         ]
       ],
-      startY: 415,
+      startY: 462,
       theme: 'grid',
     })
 
