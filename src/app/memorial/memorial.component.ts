@@ -109,7 +109,7 @@ export class MemorialComponent implements OnInit {
           {content: 'CEP:', styles: {fontSize: 5.5, fontStyle: 'bold', textColor: [0,0,0], lineColor: false, lineWidth:{right: 0, top: 1, left:1, bottom:1}, cellWidth: 33, cellPadding:5}}, 
           {content: '69055-090', styles: {fontSize: 5.5, fontStyle: 'normal', textColor: [0,0,0], lineColor: false, lineWidth:{right: 1, top: 1, left:0, bottom:1}, cellWidth: 275, cellPadding:5}}, 
           {content: 'E-mail:', styles: {fontSize: 5.5, fontStyle: 'bold', textColor: [0,0,0], lineColor: false, lineWidth:{right: 0, top: 1, left:1, bottom:1}, cellWidth: 35, cellPadding:5}}, 
-          {content: 'energin.amazonia@gmail.com', styles: {fontSize: 5.5, fontStyle: 'normal', textColor: [0,0,0], lineColor: false, lineWidth:{right: 1, top: 1, left:0, bottom:1}, cellPadding:5}}, 
+          {content: 'contato@energinam.com.br', styles: {fontSize: 5.5, fontStyle: 'normal', textColor: [0,0,0], lineColor: false, lineWidth:{right: 1, top: 1, left:0, bottom:1}, cellPadding:5}}, 
         ]
       ],
       startY: 200,
@@ -381,14 +381,35 @@ export class MemorialComponent implements OnInit {
     doc.addImage('assets/assinatura.png', 'PNG', 160,890,500,110);
 
     //RODA PÉ
-    doc.setTextColor(0, 32, 96);
+
+    /*
+    autoTable(doc, {
+      body: [
+        [ 
+          {content: 'CNPJ:', styles: {font: 'Nunito', fontSize: 5.5, fontStyle: 'normal', lineColor: false, valign: 'middle', halign: 'center', textColor: [0,0,0], fillColor: '#D0CECE', lineWidth:{right: 1, top: 1, left: 1, bottom:1}, cellPadding: 5}}, 
+          {content: '05.682.859/0001-41', styles: {font: 'Nunito', fontSize: 5.5, fontStyle: 'bold', lineColor: false, valign: 'middle', halign: 'center', textColor: [0,0,0], fillColor: '#D0CECE', lineWidth:{right: 1, top: 1, left: 1, bottom:1}, cellPadding: 5}}, 
+        ],
+      ],
+      startY: 1035,
+      theme: 'grid',
+    })
+    */
+
+    doc.setTextColor(0, 0, 0);
     doc.addFileToVFS("Nunito.ttf", Nunito);
-    doc.addFont("Nunito.ttf", "Nunito", "Normal");
-    doc.setFontSize(7.3);
-    doc.text('CNPJ: 05.682.859/0001-41', 65, 1070);
-    doc.text('Telefone: (92) 3232-7652', 65, 1085);
-    doc.text('E-mail: energin.amazonia@gmail.com', 65, 1100);
-   
+    doc.addFileToVFS("Nunito-Bold.ttf", Nunito);
+    doc.addFont("Nunito.ttf", "Nunito", "Normal", "Identity-H");
+    doc.addFont("Nunito-Bold.ttf", "Nunito", "Bold", "Identity-H");
+
+    doc.setFontSize(7);
+    doc.setFont("Nunito", "Normal");
+    doc.text('CNPJ: 05.682.859/0001-41', 65, 1035);
+    doc.text('Telefone: (92) 3232-7651 Cel.: (92) 99299-9733', 65, 1050);
+    doc.text('E-mail: contato@energinam.com.br; andre.farias@energinam.com.br; ', 65, 1065);
+    doc.text('Endereço: Rua Professor Castelo Branco, nº 2, Conj. Jardim Yolanda, Parque 10 de Novembro.', 65, 1080);
+    doc.setFont("Nunito-Bold", "Bold");
+    doc.text('https://goo.gl/maps/giYS74syb7FgW8X47', 65, 1095);
+    
 
     //BAIXAR O PDF
     window.open(doc.output('bloburl'))
